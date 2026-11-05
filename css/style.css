@@ -1,0 +1,96 @@
+@media (max-width: 768%) {
+  }
+
+.projectkaarten {
+  gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.projectkaarten > * {
+  border: 2px solid #1f6b2a;
+  border-radius: 10px;
+  background-color: rgb(96 139 168 / 0.2);
+}
+
+@media (max-width: 600px) {
+  .projectkaarten {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --primary-color: #1f6b2a;
+  --secondary-color: #e5defc;
+  --background-color: #0f120f;
+  --text-color: #d4d3d8;
+  --card-color: #1a1f1a;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+h3 {
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  flex: 1; 
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #4a4266;
+  text-align: center;
+  padding: 20px;
+}
+
+.highlight {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.kaart {
+  background-color: var(--card-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#profielfoto {
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
+  object-fit: cover;
+}
